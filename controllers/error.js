@@ -1,8 +1,3 @@
 exports.get404 = (req, res, next) => {
-  res.render('404', {
-    pageTitle: 'Error',
-    path: '/admin/add-products',
-    productCSS: true,
-    activeAddProduct: true
-  });
+  res.status(404).render('404', { pageTitle: 'Page Not Found' });
 };
